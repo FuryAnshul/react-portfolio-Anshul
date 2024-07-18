@@ -1,0 +1,6 @@
+.justify-text {
+    text-align: justify;
+    /* letter-spacing: normal; */
+    word-spacing: 0.08em;  
+    font-size: 16px;
+}
