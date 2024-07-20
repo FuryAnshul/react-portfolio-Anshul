@@ -1,5 +1,5 @@
 // import logo from "../assets/cover.png";
-import logo from "../assets/Logo.png";
+import logo from "../assets/profile.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
