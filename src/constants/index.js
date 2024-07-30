@@ -37,12 +37,12 @@ export const PROJECTS = [
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["HTML", "CSS", "Javascript", "React", "Bootstrap"],
   },
 ];
 
 export const CONTACT = {
-  address: "6A Ambar Colony, Nagpur-440023 ",
-  phoneNo: "+91 8421 2773 79  ",
+  address: "6A Ambar Colony, Nagpur-440023",
+  phoneNo: "+91 8421277379",
   email: "ramdhamanshul@gmail.com",
 };

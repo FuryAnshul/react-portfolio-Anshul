@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/AnshulRamdhamProfile.jpg";
 import { delay, motion } from "framer-motion";
 import "./style.css";
+import CV from '../assets/resume/Anshul-Ramdham-Resume.pdf'
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -34,15 +35,26 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter justify-text">{HERO_CONTENT}</motion.p>
+
+            <motion.a
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              href={CV} download
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent hover"
+            >
+              <button className="border border-solid border-gray-500 rounded-md px-4 py-2">Resume</button>
+            </motion.a>
+
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <motion.img 
+            <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-            src={profilePic} alt="Anshul Ramdham" />
+              src={profilePic} alt="Anshul Ramdham" />
           </div>
         </div>
       </div>
