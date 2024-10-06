@@ -4,7 +4,9 @@ import { DiJava } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 import { DiPhp } from "react-icons/di";
 import { RiBootstrapLine } from "react-icons/ri";
+import { TiHtml5 } from "react-icons/ti";
 import { motion } from "framer-motion";
+import { SiPowerbi } from "react-icons/si";
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -33,16 +35,17 @@ const Technologies = () => {
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 1.5 }}
                 className="flex flex-wrap items-center justify-center gap-4">
+
                 <motion.div
-                    variants={iconVariants(2.5)}
+                    variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
+                    <TiHtml5 className="text-7xl text-orange-400" />
                 </motion.div>
 
                 <motion.div
-                    variants={iconVariants(3)}
+                    variants={iconVariants(2.8)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
@@ -50,27 +53,19 @@ const Technologies = () => {
                 </motion.div>
 
                 <motion.div
-                    variants={iconVariants(5)}
+                    variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <DiJava className="text-7xl text-orange-400" />
+                    <RiBootstrapLine className="text-7xl text-purple-700" />
                 </motion.div>
 
                 <motion.div
-                    variants={iconVariants(2)}
+                    variants={iconVariants(3.5)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiMysql className="text-7xl text-blue-400" />
-                </motion.div>
-
-                <motion.div
-                    variants={iconVariants(6)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <DiPhp className="text-7xl text-cyan-400" />
+                    <RiReactjsLine className="text-7xl text-cyan-300" />
                 </motion.div>
 
                 <motion.div
@@ -78,8 +73,33 @@ const Technologies = () => {
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiBootstrapLine className="text-7xl text-purple-400" />
+                    <DiJava className="text-7xl text-orange-400" />
                 </motion.div>
+
+                <motion.div
+                    variants={iconVariants(4.4)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <DiPhp className="text-7xl text-cyan-600" />
+                </motion.div>
+
+                <motion.div
+                    variants={iconVariants(5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiMysql className="text-7xl text-blue-300" />
+                </motion.div>
+
+                <motion.div
+                    variants={iconVariants(4.8)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiPowerbi className="text-7xl text-orange-300" />
+                </motion.div>
+
             </motion.div>
         </div>
     );
